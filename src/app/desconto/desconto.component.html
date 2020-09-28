@@ -1,1 +1,25 @@
-<p>desconto works!</p>
+<div class="container">
+    <div class="test">
+
+    
+
+    <H3>Calcular desconto</H3>
+    <form action="">
+        <mat-form-field class="example-form-field">
+            <mat-label>Valor</mat-label>
+            <input matInput type="number" id="id-calc-valor-base" required>
+            <span matPrefix>$&nbsp;</span>
+        </mat-form-field><br>
+        <mat-form-field class="example-form-field">
+            <mat-label>Desconto</mat-label>
+            
+            <input matInput type="number" id="id-calc-perc-desc" required>
+            <span matSuffix>%</span>
+            
+        </mat-form-field>
+
+        <br>
+        <button mat-stroked-button color="primary" onclick="infoDesconto()">Calcular</button>
+    </form>
+</div>
+</div>

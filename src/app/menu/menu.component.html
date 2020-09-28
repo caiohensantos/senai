@@ -1,7 +1,7 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" class="caio">
     
         <button mat-icon-button class="example-icon" [matMenuTriggerFor]="belowMenu" ><mat-icon>miscellaneous_services</mat-icon></button>
-        <mat-menu #belowMenu="matMenu" yPosition="below">
+        <mat-menu class="caio" #belowMenu="matMenu" yPosition="below">
           <button mat-menu-item routerLink = "imc">Calcular IMC</button>
           <button mat-menu-item routerLink = "idade" >Calcular idade</button>
           <button mat-menu-item routerLink = "dolar">Converter reais em dolar</button>
@@ -10,7 +10,7 @@
           
         </mat-menu>
   
-    <span>My App</span>
+    <span></span>
     <span class="example-spacer"></span>
     <button mat-button routerLink = "home">Home</button>
     <button mat-button>Sobre</button>

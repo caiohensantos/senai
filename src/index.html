@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="br-pr">
+
 <head>
   <meta charset="utf-8">
   <title>Projeto2</title>
@@ -9,7 +10,50 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body class="mat-typography">
   <app-root></app-root>
+  <script>
+    function calcIdade() {
+      var idadeAno = document.getElementById('id-calc-idade').value;
+
+      if ((idadeAno == '') || (idadeAno < 1900)) {
+      } else {
+        var anoAtual = new Date().getFullYear();
+        var resultado = anoAtual - idadeAno;
+        alert("Sua idade é " + resultado + " anos");
+      }
+
+    }
+    
+    function cotacaoDolar() {
+        var dolar = document.getElementById('id-calc-dolar').value;
+        
+        if((dolar == '') || (dolar < 1)){
+        }else{
+          var calcdolar = dolar * 5.57;
+          var resultado = calcdolar;
+          
+          if(resultado) {
+            alert("Resultado: R$ " + resultado);
+          }
+        }
+      }
+      function infoDesconto() {
+        var valorBase = document.getElementById('id-calc-valor-base').value;
+        var percDesconto = document.getElementById('id-calc-perc-desc').value;
+
+        if(((valorBase == '') || (percDesconto == '')) || ((valorBase <= 0) || (percDesconto <= 0))) {
+        }else{
+          var infodesc = parseFloat(valorBase * (percDesconto / 100));
+          var resultado = parseFloat(valorBase) - parseFloat(infodesc);
+          alert("Desconto: R$ " + resultado);
+        }
+      }
+
+  </script>
+
+ 
 </body>
+
 </html>
